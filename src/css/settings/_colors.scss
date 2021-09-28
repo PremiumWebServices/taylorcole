@@ -1,0 +1,48 @@
+/* ==========================================================================
+	 /Settings #Color Variables
+	 ========================================================================== */
+
+/* Brand Colors
+	 ========================================================================== */
+
+$--color-white:                 	hsl(0, 0%, 100%);
+
+$--color-neutral-05:              hsl(0, 0%, 95%);
+$--color-neutral-10:              hsl(0, 0%, 90%);
+$--color-neutral-25:              hsl(0, 0%, 75%);
+$--color-neutral-50:              hsl(0, 0%, 50%);
+$--color-neutral-75:              hsl(0, 0%, 25%);
+$--color-neutral-90:              hsl(0, 0%, 10%);
+$--color-neutral:                   $--color-neutral-10;
+
+$--color-black:                   hsl(0, 0%, 15%);
+$--color-blue:                    hsl(214, 62%, 21%);
+$--color-grey:                    hsl(218, 10%, 53%);
+$--color-pink:                    hsl(351, 75%, 48%);
+$--color-light-grey:              #F4F5F7;
+$--color-grey-highlight:          rgba(123,132,148,0.25);
+$--color-gold:                    hsl(38, 52%, 68%);
+
+$--color-primary:                 $--color-blue;
+
+/* Text Colors
+	 ========================================================================== */
+
+$--color-text:                      $--color-grey;
+$--color-text-on-light:             $--color-grey;
+$--color-text-on-dark:              $--color-white;
+$--color-text-light:                $--color-white;
+$--color-text-disabled:             $--color-black;
+
+$--color-link:                      $--color-primary;
+$--color-link-on-dark:              $--color-white;
+$--color-link-visited:              $--color-white;
+$--color-link-hover:                $--color-white;
+
+$--color-text-screen:               $--color-black;
+$--color-text-input:                $--color-neutral-50;
+$--color-text-input-focus:          $--color-text;
+
+$--success-color:                  #00AB66;
+$--error-color:                    red;
+$--info-color:                    $--color-primary;

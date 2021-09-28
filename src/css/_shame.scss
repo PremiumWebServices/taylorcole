@@ -1,0 +1,30 @@
+
+/* IE 11 SVG size fix
+   ========================================================================== */
+@media ( -ms-high-contrast: none ) {
+	.c-footer__contact .c-icon {
+		width: 1.1875rem;
+	}
+}
+
+@media ( -ms-high-contrast: none ) {
+	.c-logo {
+		height: 90px;
+	}
+}
+
+@media ( -ms-high-contrast: none ) {
+	.c-footer__separator {
+		margin-top: 32px;
+		margin-bottom: 32px;
+	}
+}
+
+.c-section--disclosure {
+	padding: 0 !important;
+}
+
+.c-section--disclosure .c-section__container {
+	margin-bottom: $--space-l;
+	width: 100%;
+}

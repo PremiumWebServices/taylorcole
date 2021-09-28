@@ -1,0 +1,129 @@
+.c-property-search__container {
+	margin-bottom: 1rem;
+}
+
+.c-property-search__header h2 {
+	margin-bottom: $--space-m;
+	font-family: $--font-family-primary;
+	font-size: 1.125rem;
+	font-weight: $--font-weight-normal;
+	color: $--color-white;
+	letter-spacing: -0.36px;
+	text-transform: uppercase;
+}
+
+/* Tabs
+	 == */
+
+
+.c-tabbing .c-tabs {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+}
+
+.c-tabbing .c-tabs li {
+	flex: 1 0 auto;
+	margin-right: $--space-xs;
+}
+
+.c-tabbing .c-tab {
+	display: block;
+	padding-top: $--space-m;
+	padding-right: $--space-s;
+	padding-bottom: $--space-m;
+	padding-left: $--space-s;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	font-family: $--font-family-body;
+	font-size: 0.875rem;
+	line-height: 1;
+}
+
+.c-tab:hover,
+.c-tab:focus {
+	color: $--color-white;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.c-tab-selling {
+	background-color: rgba(255, 255, 255, 0.6);
+	color: $--color-blue;
+}
+
+.c-tab-selling:hover,
+.c-tab-selling:focus {
+	background-color: rgba(255, 255, 255, 0.6);
+	color: $--color-blue;
+}
+
+.c-tab-buying {
+	background-color: $--color-primary;
+	color: $--color-white;
+}
+
+.c-tab-letting {
+	background-color: $--color-pink;
+	color: $--color-white;
+}
+
+.c-pane {
+	padding: $--space-s;
+}
+
+.c-pane--selling {
+	background-color: rgba(255, 255, 255, 0.6);
+	color: $--color-white;
+}
+
+.c-pane--buying {
+	background-color: rgba(20, 48, 85, 0.45);
+	color: $--color-white;
+}
+
+.c-pane--letting {
+	background-color: rgba(213, 30, 57, 0.45);
+	color: $--color-white;
+}
+
+.c-pane--letting legend,
+.c-pane--buying legend {
+	color: $--color-white;
+}
+
+.c-pane--letting .c-form__label,
+.c-pane--buying .c-form__label,
+.c-pane--selling .c-form__label {
+	color: $--color-white;
+}
+
+.t-signature .c-pane--buying,
+.t-fine-village .c-pane--buying,
+.page-id-199 .c-pane--buying {
+	background-color: hsla(45, 50%, 64%, 0.5);
+	color: $--color-black;
+}
+
+.t-signature .c-tab-buying,
+.t-fine-village .c-tab-buying,
+.page-id-199 .c-tab-buying {
+	background-color: hsla(45, 50%, 64%, 0.5);
+	color: $--color-black;
+}
+
+.t-signature .c-pane--buying legend,
+.t-fine-village .c-pane--buying legend,
+.page-id-199 .c-pane--buying legend {
+	color: $--color-black;
+}
+
+.t-signature .c-pane--buying .c-form__label,
+.t-fine-village .c-pane--buying .c-form__label,
+.page-id-199 .c-pane--buying .c-form__label {
+	color: $--color-black;
+}
+
+.js-tabs__title-active {
+	font-weight: 600;
+}

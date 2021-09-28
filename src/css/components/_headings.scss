@@ -1,0 +1,62 @@
+
+.c-title {
+	//font-weight: $font-weight-bold;
+	//color: $color-primary;
+}
+
+h1,
+.c-title--primary {
+	font-family: $--font-family-primary;
+	font-size: 1.75rem;
+	color: #143055;
+	letter-spacing: 0;
+	line-height: 1.3571;
+	text-transform: uppercase;
+}
+
+.c-title--primary + p {
+	//margin-top: 10px;
+}
+
+h2,
+.c-title--secondary {
+	font-family: $--font-family-body;
+	font-size: 1.5625rem;
+	color: #143055;
+	letter-spacing: 0;
+	line-height: 1.4;
+}
+
+h3,
+.c-title--tertiary {
+	font-family: $--font-family-primary;
+	font-size: 1.125rem;
+	color: #143055;
+	line-height: 2.1111;
+	text-transform: uppercase;
+}
+
+.c-title--quaternary {
+	//font-family: $font-family-sub;
+	//font-size: 1.25rem;
+	//line-height: 1.25;
+}
+
+.c-title--quinary {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+p + .c-title {
+	margin-top: $--space-m;
+}
+
+.c-title--white {
+	color: $--color-white;
+	font-family: $--font-family-primary;
+	font-size: 1.75rem;
+	font-weight: 400;
+	letter-spacing: 0;
+	line-height: 1.3571;
+	text-transform: uppercase;
+}

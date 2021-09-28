@@ -1,0 +1,198 @@
+.c-btn,
+.wp-block-button__link,
+.nav-links .nav-next a,
+.nav-links .nav-previous a {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	padding-right: 0;
+	padding-left: 0;
+	vertical-align: middle;
+	background-color: transparent;
+	background-clip: border-box;
+	border: 1px solid transparent;
+	font-family: $--font-family-body;
+	font-size: 0.875rem;
+	font-weight: $--font-weight-normal;
+	line-height: 1.2857;
+	color: $--color-black;
+	white-space: normal;
+	user-select: none;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.c-btn:hover,
+.c-btn:focus,
+.nav-links ul li a:hover,
+.nav-links ul li a:focus {
+	color: $--color-primary;
+	text-decoration: none;
+}
+
+.t-dark.c-btn:visited,
+.t-dark.c-btn:active,
+.t-dark.c-btn:link {
+	color: hsl(0, 0%, 100%);
+	text-decoration: none;
+}
+
+.wp-block-button:not(.is-style-c-btn--secondary):not(.is-style-c-btn--tertiary) > .wp-block-button__link,
+.c-btn--primary {
+	padding-top: 10px;
+	padding-right: 12px;
+	padding-bottom: 10px;
+	padding-left: 12px;
+	min-width: 160px;
+	border-radius: 3px;
+	background-color: $--color-primary;
+	color: $--color-white;
+
+}
+
+.wp-block-button .wp-block-button__link:hover,
+.wp-block-button .wp-block-button__link:focus,
+.c-btn--primary:hover,
+.c-btn--primary:focus {
+	background-color: $--color-primary;
+	color: $--color-white;
+}
+
+.c-btn--secondary {
+	padding-top: 10px;
+	padding-right: 12px;
+	padding-bottom: 10px;
+	padding-left: 12px;
+	min-width: 160px;
+	background-color: transparent;
+	border-color: $--color-white;
+	color: $--color-white;
+}
+
+.is-style-c-btn--tertiary .wp-block-button__link,
+.c-btn--tertiary, .is-style-c-btn--secondary a {
+	padding-top: 10px;
+	padding-right: 12px;
+	padding-bottom: 10px;
+	padding-left: 12px;
+	min-width: 160px;
+	background-color: $--color-pink;
+	border-color: $--color-pink;
+	border-radius: 0;
+	color: $--color-white;
+}
+
+.is-style-c-btn--tertiary .wp-block-button__link:hover,
+.is-style-c-btn--tertiary .wp-block-button__link:focus,
+.is-style-c-btn--secondary .wp-block-button__link:hover,
+.is-style-c-btn--secondary .wp-block-button__link:focus,
+.c-btn--tertiary:hover,
+.c-btn--tertiary:focus {
+	border-color: $--color-white;
+	background-color: $--color-white;
+	color: $--color-pink;
+}
+
+.c-btn--outline {
+	padding-top: $--space-xs;
+	padding-right: $--space-s;
+	padding-bottom: $--space-xs;
+	padding-left: $--space-s;
+	border-color: $--color-white;
+	font-size: 0.875rem;
+	color: $--color-white;
+	border-radius: 5px;
+	min-height: 40px;
+}
+
+.c-btn--outline:hover,
+.c-btn--outline:focus {
+	color: $--color-white;
+	background-color: rgba( 255,255,255,0.6 );
+}
+
+.c-btn--icon-right,
+.c-btn--icon-left {
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.c-btn--icon-right .c-icon {
+	color: #d51e39;
+	width: 20px;
+	height: 20px;
+}
+
+.c-btn--medium {
+	padding-top: $--space-m;
+	padding-bottom: $--space-m;
+	width: 100%;
+	max-width: 480px;
+}
+
+.c-btn--full {
+	width: 100%;
+}
+
+.c-btn--print {
+	padding: 0;
+	min-width: auto;
+	border: none;
+	background-color: transparent;
+	font-size: inherit;
+}
+
+.c-btn--print:hover,
+.c-btn--print:focus {
+	text-decoration: none;
+}
+
+p + .wp-block-buttons,
+p + .wp-block-button {
+	margin-top: $--space-l;
+}
+
+.wp-block-buttons .wp-block-button {
+	margin-bottom: 0;
+}
+
+.t-signature .c-btn--primary .c-icon {
+	color: $--color-gold;
+}
+
+.t-signature .c-btn--outline {
+	border-color: $--color-black;
+	color: $--color-black;
+}
+
+.wp-block-button > a > img {
+	margin-left: 15px;
+}
+
+.is-style-c-btn--secondary > a > img {
+	margin-left: 10px;
+}
+
+@media screen and (max-width:767px){
+	footer.c-latest-properties__footer {
+		text-align: left;
+	}
+}
+
+.c-btn__all-properties {
+	width: 30%;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	margin-left: 16px;
+}
+
+@media screen and (min-width:768px){
+	.c-btn__all-properties {
+		margin-top: 40px;
+		margin-bottom: -60px;
+		margin-left: 0;
+	}
+}

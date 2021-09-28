@@ -1,0 +1,26 @@
+/*!
+ * Theme Name:   Taylor Cole
+ * Theme URI:    http://github.com/edgecreative/taylor-cole/
+ * Description:  WordPress theme for Taylor Cole website.
+ * Author:       EDGE Creative
+ * Author URI:   https://www.edge-creative.com
+ * Version:      0.1.0
+ * License:      GNU General Public License v2 or later
+ * License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ * Tags:
+ * Text Domain:  taylor-cole
+*/
+
+@import 'settings/**/*';
+
+@import 'generic/**/*';
+
+@import 'elements/**/*';
+
+@import 'objects/**/*';
+
+@import 'components/**/*';
+
+@import 'utilities/**/*';
+
+@import 'shame';

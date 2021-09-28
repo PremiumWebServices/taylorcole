@@ -1,0 +1,18 @@
+.is-style-highlighted {
+	margin-top: $--space-s;
+	color: $--color-pink !important;
+	text-transform: uppercase;
+	font-size: 0.875rem;
+}
+
+.is-style-highlighted a {
+	color: $--color-pink;
+	text-transform: initial;
+	font-size: 1rem;
+}
+
+.is-style-highlighted a:hover,
+.is-style-highlighted a:focus {
+	color: $--color-pink;
+	text-decoration: underline;
+}

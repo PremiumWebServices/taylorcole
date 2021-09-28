@@ -1,0 +1,24 @@
+/* Links Settings
+ *
+ * These settings should be overwritten in your setting/colour file.
+	 ========================================================================== */
+
+/**
+ * Links: Defaults
+ */
+
+ a {
+	text-decoration: none;
+	transition: background-color 0.3s cubic-bezier(0.75, 0.02, 0.5, 1);
+	color: $--color-link;
+}
+
+a:hover,
+a:focus {
+	color: $--color-link;
+	text-decoration: underline;
+}
+
+.page-id-106 .entry-content .wp-block-edgetoolkit-section .c-section__container > p:has(a) {
+	word-break: break-all;
+}

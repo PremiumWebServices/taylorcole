@@ -1,0 +1,711 @@
+.c-section,
+.wp-block-edgetoolkit-section {
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.c-section .c-title--secondary {
+	margin-top: 6px;
+	margin-bottom: 18px;
+}
+
+.c-section__container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	min-width: 300px;
+	max-width: 1062px;
+	text-align: center;
+	
+	ul > li {
+		list-style-position: inside;
+	}
+}
+
+@media ( min-width: 900px ) {
+
+	.c-section--narrow .c-section__container {
+		width: 90%;
+		min-width: 300px;
+		max-width: 596px;
+	}
+
+}
+
+@media ( min-width: 900px ) {
+
+	.c-section--wide .c-section__container {
+		width: 100%;
+		max-width: 100%;
+	}
+
+}
+
+/* Section: Underlay
+ *
+ * Position an media element behind the content.
+   ========================================================================== */
+
+.c-section__underlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: 0 auto;
+	width: 100%;
+	overflow: hidden;
+}
+
+.c-section__underlay img {
+	height: 100%;
+	width: 100%;
+	object-position: center;
+	object-fit: cover;
+}
+
+/**
+ * Section: Header
+ */
+.c-section--header {
+	padding-top: $--space-l;
+	padding-bottom: $--space-l;
+}
+
+@media ( min-width: 900px ) {
+	.c-section--header {
+		padding-top: $--space-xxl;
+		padding-bottom: $--space-xxl;
+	}
+}
+
+.c-section--header .c-title--secondary {
+	margin-bottom: 0;
+}
+
+/**
+ * Section: Testimonials
+ */
+.c-section--testimonial {
+	padding-top: $--space-l;
+	padding-bottom: $--space-l;
+	text-align: center;
+}
+
+/** */
+
+.c-section--contact {
+	padding-top: $--space-l;
+	padding-bottom: $--space-l;
+	background-color: $--color-light-grey;
+}
+
+.c-section--contact .c-section__content + .c-section__footer {
+	margin-top: 44px;
+}
+
+@media ( min-width: 900px ) {
+	.c-section--contact .c-section__footer {
+		display: flex;
+	}
+}
+
+.c-section__call + .c-section__email {
+	margin-top: 12px;
+}
+
+@media ( min-width: 900px ) {
+
+	.c-section__email {
+		border-left: 1px solid $--color-blue;
+	}
+
+	.c-section__call,
+	.c-section__email {
+		flex: 1 0 50%;
+		font-family: $--font-family-primary;
+		font-size: 1.125rem;
+		color: #4a4a49;
+	}
+
+	.c-section__call a,
+	.c-section__email a {
+		color: #4a4a49;
+		font-weight: $--font-weight-normal;
+	}
+
+	.c-section__call .c-icon,
+	.c-section__email .c-icon {
+		margin-right: auto;
+		margin-bottom: 18px;
+		margin-left: auto;
+		width: auto;
+		height: 42px;
+		color: $--color-blue;
+	}
+
+	.c-section__call + .c-section__email {
+		margin-top: 0;
+	}
+}
+
+/**
+ * Section: Services
+ */
+.c-section--services {
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+
+@media ( min-width: 900px ) {
+	.c-section--services {
+		padding-top: 72px;
+		padding-bottom: 72px;
+	}
+}
+
+.c-section--header + .c-section--services {
+	padding-top: 16px;
+}
+
+@media ( min-width: 900px ) {
+	.c-section--header + .c-section--services {
+		padding-top: 36px;
+	}
+}
+
+/**
+ * Section: Offered Services
+ */
+
+ .c-section--offeredServices {
+	background-color: $--color-light-grey;
+ }
+
+.c-section--serviceItem {
+
+	.wp-block-column {
+
+		margin-bottom: 15px;
+		text-align: left;
+
+		.wp-block-image > img {
+			height: 210px;
+			width: 100%;
+		}
+
+		.wp-block-media-text {
+			margin: 25px 0;
+			grid-gap: 0;
+
+			.wp-block-media-text__media {
+				width: 70%;
+				margin-bottom: 0;
+			}
+
+			.wp-block-media-text__content {
+				width: 100%;
+			}
+		}
+
+		p {
+			text-align: left;
+		}
+
+		.wp-block-button__link {
+			justify-content: space-between;
+
+			
+		}
+	}
+}
+
+/**
+ * Section: Content
+ */
+
+.c-section--content {
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+
+@media ( min-width: 900px ) {
+	.c-section--content {
+		padding-top: 72px;
+		padding-bottom: 72px;
+	}
+}
+
+/* Section: Property Portfolio
+========================================================================== */
+
+.c-section__property-portfolio {
+	div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		p {
+			color: $--color-white;
+			font-weight: 400;
+			margin: 15px 0;
+			width: 60%;
+		}
+	}
+}
+
+/* Section: Properties
+   ========================================================================== */
+.c-section--properties {
+	padding-top: $--space-l;
+	padding-bottom: 80px;
+	background: linear-gradient(0deg, $--color-white 50%, $--color-primary 50%);
+}
+
+.c-section--properties .c-section__container {
+	background-color: $--color-white;
+	padding: 20px 30px;
+	border-radius: 10px;
+}
+@media ( min-width: 600px ) {
+	.c-section--properties {
+		padding-right: $--space-l;
+		padding-left: $--space-l;
+		background-color: $--color-white;
+		border-radius: 8px;
+	}
+}
+
+@media ( max-width: 899px ) {
+	.c-section--properties .c-section__grid .c-propert--teaser {
+		margin-bottom: $--space-l;
+	}
+}
+
+@media ( min-width: 900px ) {
+	.c-section--properties .c-section__grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: $--space-l;
+	}
+}
+
+@media ( min-width: 600px ) {
+	.c-section--properties .c-section__container {
+		width: 100%;
+	}
+}
+
+.c-section--properties .c-section__header {
+	margin-bottom: $--space-l;
+}
+
+/* Section: Call To Action Bar
+   ========================================================================== */
+.c-section--cta-bar {
+	background-color: $--color-primary;
+	text-align: center;
+}
+
+.c-section--cta-bar .o-container {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+@media ( min-width: 600px ) {
+	.c-section--cta-bar .o-container {
+		display: grid;
+		grid-template-columns: 0.58fr 0.41fr;
+	}
+}
+
+.c-section--cta-bar .c-section__description {
+	grid-column: 1;
+	color: $--color-white;
+	font-size: 1.375rem;
+	line-height: 1.1;
+}
+
+@media ( max-width: 599px ) {
+	.c-section--cta-bar .c-section__description {
+		margin-bottom: 24px;
+	}
+}
+
+.c-section--cta-bar .c-section__cta {
+	grid-column: 2;
+	align-items: center;
+}
+
+.t-signature.c-section--cta-bar {
+	font-family: $--font-family-primary;
+	background-color: $--color-gold;
+	text-transform: uppercase;
+}
+
+.t-signature.c-section--cta-bar .c-section__description {
+	grid-column: 1 / span 2;
+}
+
+.t-signature.c-section--cta-bar a {
+	display: block;
+	font-size: 1.75rem;
+	color: $--color-white;
+	letter-spacing: 1px;
+	line-height: 1.3571;
+}
+
+.t-signature.c-section--cta-bar a:hover,
+.t-signature.c-section--cta-bar a:focus {
+	color: $--color-white;
+	text-decoration: none;
+}
+
+/**
+ * Section: Themes
+ */
+.t-dark.c-section {
+	background-color: $--color-primary;
+	color: $--color-white;
+}
+
+.t-dark .c-title--secondary {
+	color: $--color-white;
+}
+
+.t-neutral.c-section {
+	background-color: #edefef;
+}
+
+.c-section.is-style-t-primary,
+.t-primary.c-section {
+	background-color: $--color-blue;
+	color: $--color-white;
+}
+
+.c-section.is-style-t-primary .c-section__underlay img {
+	mix-blend-mode: multiply;
+	filter: saturate(100%);
+	opacity: 0.45;
+}
+
+.is-style-t-primary,
+.t-primary .c-title--tagline {
+	color: $--color-white;
+}
+.is-style-t-primary,
+.t-primary .c-testimonial__author strong {
+	color: $--color-primary;
+}
+
+.is-style-t-primary .c-title {
+	color: $--color-white;
+}
+
+/* Section: Properties
+	 ========================================================================== */
+.c-section__form {
+	padding-top: $--space-l;
+	padding-bottom: $--space-l;
+}
+
+.c-section__form legend {
+	font-family: $--font-family-primary;
+	font-size: 1.75rem;
+	color: $--color-primary;
+	text-align: center;
+	line-height: 1.357;
+}
+
+/**
+ * EDGE Toolkit Blocks: Section
+ */
+.wp-block-edgetoolkit-section {
+	padding-top: $--space-l;
+	padding-bottom: $--space-l;
+}
+
+@media ( min-width: 900px ) {
+	.wp-block-edgetoolkit-section {
+		padding-top: $--space-xl;
+		padding-bottom: $--space-xl;
+	}
+}
+
+.wp-block-edgetoolkit-section h1 + p {
+	margin-top: $--space-m;
+}
+
+@media ( min-width: 900px ) {
+	.wp-block-edgetoolkit-section h1 + p {
+		margin-top: $--space-l;
+	}
+}
+
+/* Social Sharing
+	 ========================================================================== */
+.c-section--social-share .o-container {
+	padding: $--space-s 0;
+	margin-top: $--space-l;
+	border-top: $--border-width-thin solid hsla(218, 10%, 53%, 0.3);
+	border-bottom: $--border-width-thin solid hsla(218, 10%, 53%, 0.3);
+	color: #7B8494;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.single-post .c-section--social-share .o-container {
+	margin-bottom: $--space-l;
+}
+
+.c-social-share {
+	display: flex;
+	flex-direction: row;
+	font-family: $--font-family-body;
+	font-size: 0.875rem;
+	color: $--color-blue;
+	line-height: 1.2857;
+}
+
+.c-social-share a,
+.c-social-share button {
+	color: $--color-blue;
+}
+
+@media ( min-width: 900px ) {
+	.c-social-share a,
+	.c-social-share button {
+		margin-left: $--space-l;
+	}
+}
+
+.c-social-share button a {
+	margin-left: 0;
+}
+
+/* Section: Disclosure
+ *
+ * 1. Center content in parent.
+	 ========================================================================== */
+
+.page-id-130 .wp-block-edgetoolkit-section:nth-child( even ) .wp-block-media-text {
+	grid-template-columns: 1fr 40%;
+}
+
+.page-id-130 .wp-block-edgetoolkit-section:nth-child( even ) .wp-block-media-text .wp-block-media-text__media {
+	grid-column: 2;
+	grid-row: 1;
+
+}
+
+.page-id-130 .wp-block-edgetoolkit-section:nth-child( even ) .wp-block-media-text .wp-block-media-text__content {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.page-id-130 .c-title--primary {
+	text-transform: uppercase;
+}
+
+.c-section--form--mortgage,
+.c-section--form--valuation {
+	padding-top: $--space-l;
+	padding-bottom: 0;
+	background-color: rgb(244,245,247);
+	background-image: linear-gradient(
+		180deg,
+		$--color-light-grey 0%,
+		$--color-light-grey 500px,
+		$--color-white 500px,
+		$--color-white 100%);
+}
+
+.c-section--form--mortgage .c-form,
+.c-section--form--valuation .c-form {
+	padding-top: $--space-l;
+	padding-right: $--space-m;
+	padding-bottom: $--space-l;
+	padding-left: $--space-m;
+	border-radius: 8px;
+	background-color: $--color-white;
+}
+
+@media ( min-width: 900px ) {
+	.c-section--form--mortgage .c-form,
+	.c-section--form--valuation .c-form {
+		padding-top: $--space-l;
+		padding-right: $--space-l;
+		padding-bottom: $--space-l;
+		padding-left: $--space-l;
+	}
+}
+
+// Align button with input and label.
+.c-section--form--mortgage .c-btn {
+	margin-top: 32px;
+	height: 44px;
+}
+
+.c-section--form--borrow,
+.c-section--form--stamp-duty {
+	padding-top: $--space-l;
+	padding-bottom: $--space-l;
+}
+
+.c-section--form-stamp-duty-results {
+	padding-bottom: $--space-l;
+}
+
+.c-section--form-stamp-duty-results .c-form {
+	padding: $--space-l;
+	background-color: $--color-light-grey;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.c-section--form-stamp-duty-results .c-section__content {
+	margin-top: $--space-m;
+}
+
+.c-section--form-stamp-duty-results .c-section__content {
+	.stamp-response {
+		font-size: 1.2em;
+		color: red;
+	}
+	p {
+		font-size: 2em;
+	}
+}
+
+/* Modifier: Position
+	 ========================================================================== */
+@media ( min-width: 1200px ) {
+	.c-section--overlap-top {
+		margin-top: -176px;
+		padding-top: 176px;
+	}
+}
+
+@media ( min-width: 1200px ) {
+
+	.c-section--overlap-bottom + .c-section {
+		margin-top: -308px;
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 1024px;
+	}
+}
+
+/* Modifier: Theme
+	 ========================================================================== */
+.wp-block-edgetoolkit-section.t-neutral {
+	background-color: #f4f5f7;
+}
+
+.wp-block-edgetoolkit-section.t-signature,
+.wp-block-edgetoolkit-section.is-style-t-signature,
+.wp-block-edgetoolkit-section .t-signature,
+.wp-block-edgetoolkit-section .is-style-t-signature {
+	background-color: $--color-gold;
+	background-image: linear-gradient(
+		180deg,
+		rgba(0,0,0,0.05) 0%,
+		rgba(255,255,255,0.1)
+		100%
+	);
+	color: $--color-primary;
+}
+
+/* Utility: Padding
+	 ========================================================================== */
+.u-padding-s {
+		padding-top: 8px;
+		padding-bottom: 8px;
+}
+
+@media ( min-width: 900px ) {
+	.u-padding-s {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+}
+
+.u-padding-m {
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+@media ( min-width: 900px ) {
+	.u-padding-l {
+		padding-top: 64px;
+		padding-bottom: 64px;
+	}
+}
+
+
+.u-padding-l {
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+@media ( min-width: 900px ) {
+	.u-padding-l {
+		padding-top: 96px;
+		padding-bottom: 96px;
+	}
+}
+
+.u-padding-xl {
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+
+@media ( min-width: 900px ) {
+	.u-padding-xl {
+		padding-top: 152px;
+		padding-bottom: 152px;
+	}
+}
+
+.c-section--heading-blue {
+	background-color: $--color-primary;
+	color: $--color-white;
+	padding: 10px;
+
+	strong {
+		width: 100%;
+		display: block;
+		margin: auto;
+		font-size: 1.5rem;
+	}
+}
+
+@media ( min-width: 900px ) {
+	.c-section--heading-blue {
+		padding: 40px;
+
+		strong {
+			width: 80%;
+			font-size: 1.75rem;
+		}
+	}
+}
+
+@media screen and (max-width:767px){
+	.c-section--properties, .c-section.wp-block-edgetoolkit-section.c-section--offeredServices {
+		padding-bottom: 0;
+	}
+
+	.c-section__container > .wp-block-columns.c-section--serviceItem {
+		margin-bottom: 0;
+	}
+
+	.c-section--properties > .c-section__container {
+		padding: inherit;
+	}
+
+	.page-id-106 figure.wp-block-table td {
+		font-size: 0.7em;
+	}
+}

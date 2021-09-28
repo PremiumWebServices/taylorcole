@@ -1,0 +1,28 @@
+
+.c-footer__logos {
+	margin-top: $--space-m;
+}
+
+.c-list-logos {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+}
+
+@media ( min-width: 1024px ) {
+	.c-list-logos {
+		justify-content: flex-end;
+	}
+}
+
+.c-list-logos__item img {
+	margin-right: $--space-l;
+	width: auto;
+	max-height: $--space-l;
+}
+
+.c-list-logos__item:last-child img {
+	margin-right: 0;
+}

@@ -1,0 +1,116 @@
+.c-site-header {
+	background-color: $--color-blue;
+	position: relative;
+	z-index: 9999;
+}
+
+.c-site-header a {
+	color: $--color-white;
+	font-size: 0.9em;
+}
+
+.c-site-header__container {
+	display: flex;
+	flex-direction: row;
+	padding: 10px $--space-l;
+}
+
+@media ( min-width: 1024px ) {
+	.c-site-header__container {
+		padding-right: $--space-xl;
+		padding-left: $--space-xl;
+	}
+}
+
+@media ( min-width: 1100px ) {
+	.c-site-header__container {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+
+@media ( min-width: 1600px ) {
+	.c-site-header__container {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 1024px;
+	}
+}
+
+/* Masthead */
+.c-site-header__masthead {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.c-masthead {
+	flex: 1 0 auto;
+}
+
+/* Logo */
+
+.c-logo {
+	display: block; // Remove white space after svg.
+	width: 90px;
+	height: auto;
+}
+
+.c-logo-wrap {
+	display: block;
+}
+
+.c-navigation {
+	display: none;
+}
+
+.c-site-header .c-icon--menu {
+	margin-left: 32px;
+}
+
+/* Menu Button */
+
+.c-site-header_menu-button {
+	grid-column: 2;
+	grid-row: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+@media ( min-width: 1100px ) {
+
+	.c-site-header a {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		padding: $--space-s;
+		text-decoration: none;
+	}
+
+	.c-site-header .menu-item a:hover,
+	.c-site-header .menu-item a:focus {
+		background-color: rgba(255, 255, 255, 0.1);
+	}
+
+	.c-site-header a .c-icon {
+		flex: 1 0 auto;
+	}
+
+	.c-logo {
+		margin-top: 15px;
+		width: 150px;
+	}
+}
+
+/* Has Hero
+	 ========================================================================== */
+.has-hero .c-site-header {
+	position: absolute;
+	width: 100%;
+	background-color: transparent;
+}
+
+/* Modifyer: Theme
+	 ========================================================================== */

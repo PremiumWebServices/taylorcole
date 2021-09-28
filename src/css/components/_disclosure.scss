@@ -1,0 +1,156 @@
+.c-section--disclosure {
+	padding-top: 54px;
+	padding-bottom: 54px;
+}
+
+.c-section--disclosure .c-section__content {
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+	min-width: 300px;
+	max-width: 972px;
+	border: 1pt solid hsla(175, 7%, 65%, 0.19);
+}
+
+.c-section--content + .c-section--disclosure {
+	padding-top: 0;
+}
+
+/**
+ * Disclosure Pattern
+ */
+
+.c-disclosure {
+
+}
+
+/* Disclosure Term
+   ========================================================================== */
+
+.c-disclosure__term {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 1rem;
+	font-weight: $--font-weight-bold;
+	color: $--color-white;
+	line-height: 1.3125;
+	background: $--color-primary;
+}
+
+.c-disclosure:not( :first-child ) .c-disclosure__term  {
+	border-top: 1pt solid hsla(175, 7%, 65%, 0.19);
+}
+
+/* Disclosure Button
+ *
+ * 1. Force full width.
+ * 2. Reset default button styling
+ * 3. Center button within parent element.
+   ========================================================================== */
+.c-disclosure__button {
+	display: flex;
+	position: relative;
+	margin-right: auto; /* [3] */
+	margin-left: auto; /* [3] */
+	width: 100%; /* [1] */
+	min-width: 300px; /* [1] */
+	max-width: 800px; /* [1] */
+	border: none; /* [2] */
+	background-color: transparent; /* [2] */
+	cursor: pointer;
+	text-align: left;
+	width: 100%;
+	padding: 0 30px 0 15px;
+}
+
+@media ( min-width: 900px ){
+	.c-disclosure__button {
+		text-align: center;
+		width: 90%;
+	}
+}
+
+.c-disclosure__button:focus {
+	outline: none;
+}
+
+.c-disclosure__button .c-icon--disclosure {
+	flex: 1 0 auto;
+	display: inline-block;
+	transition: transform $--transitions-duration $--transitions-timing;
+	height: 12px;
+	margin: 6px 5px 0 0;
+	color: $--color-grey;
+	fill: $--color-grey;
+}
+
+@media ( min-width: 900px ){
+	.c-disclosure__button .c-icon--disclosure {
+		height: 25px;
+		margin: 0;
+	}
+}
+
+/* IE 11 Fix */
+@media ( -ms-high-contrast: none ) {
+
+	.c-disclosure__button .c-icon--disclosure {
+		width: 12px;
+	}
+
+}
+
+/* IE 11 Fix */
+@media ( min-width: 900px ) and ( -ms-high-contrast: none ) {
+
+	.c-disclosure__button .c-icon--disclosure {
+		width: 25px;
+	}
+
+}
+
+.c-disclosure__button[aria-expanded='false'] .c-icon--disclosure {
+	color: $--color-pink;
+	transform: rotate(180deg);
+	transform-origin: center;
+}
+
+.c-disclosure__button[aria-expanded='true'] .c-icon--disclosure {
+	color: #d8d8d8;
+}
+
+.c-disclosure__title {
+	flex: 1 0 100%;
+	font-size: 1rem;
+	font-weight: $--font-weight-normal;
+	line-height: 1.5;
+	color: $--color-white;
+	text-align: center;
+}
+
+/* Disclosure: Description
+ *
+ * 1. Reset vendor properties.
+   ========================================================================== */
+
+.c-disclosure__description {
+	margin-left: 0; /* [1] */
+	background-color: $--color-light-grey;
+}
+
+/* Disclosure: Content
+ *
+ * 1. Center content in parent.
+   ========================================================================== */
+
+.c-disclosure__content {
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: $--space-m;
+	padding-bottom: $--space-m;
+	width: 95%;
+	min-width: 300px;
+	font-size: $--color-grey;
+	color: #4a4a49;
+	line-height: 1.5;
+}

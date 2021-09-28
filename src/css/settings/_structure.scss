@@ -1,0 +1,58 @@
+
+/* Border.
+   ========================================================================== */
+$--border-width-thin: 1pt;
+$--border-width-thick: 2pt;
+
+/* Space.
+   ========================================================================== */
+
+$--space: 16px;
+$--space-xxs: 2px;
+$--space-xs: 4px;
+$--space-s: 8px;
+$--space-m: 16px;
+$--space-l: 32px;
+$--space-xl: 64px;
+$--space-xxl: 81px;
+
+/* Inset.
+   ========================================================================== */
+
+$--inset: 16px 16px 16px 16px;
+$--inset-xxs: 2px 2px 2px 2px;
+$--inset-xs: 4px 4px 4px 4px;
+$--inset-s: 8px 8px 8px 8px;
+$--inset-m: 16px 16px 16px 16px;
+$--inset-l: 32px 32px 32px 32px;
+$--inset-xl: 64px 64px 64px 64px;
+
+$--inset-squish: 8px 16px;
+$--inset-squish-xxs: 1px 2px;
+$--inset-squish-xs: 2px 4px;
+$--inset-squish-s: 4px 8px;
+$--inset-squish-m: 8px 16px;
+$--inset-squish-l: 16px 32px;
+$--inset-squish-xl: 32px 64px;
+
+$--inset-stretch: 16px 8px;
+$--inset-stretch-xxs: 2px 1px;
+$--inset-stretch-xs: 4px 2px;
+$--inset-stretch-s: 8px 4px;
+$--inset-stretch-m: 16px 8px;
+$--inset-stretch-l: 32px 16px;
+$--inset-stretch-xl: 64px 32px;
+
+/* Z-Index
+   ========================================================================== */
+$--z-index-0: 0;   // Default
+$--z-index-1: 10;
+$--z-index-2: 20;
+$--z-index-3: 30;  // Fixed Header
+$--z-index-4: 40;  // Modal Backdrop
+$--z-index-5: 50;  // Model
+$--z-index-6: 60;  // Popover
+$--z-index-7: 70;  // Tooltip
+$--z-index-8: 80;  // Overlay Navigation
+$--z-index-9: 90;
+$--z-index-10: 100;

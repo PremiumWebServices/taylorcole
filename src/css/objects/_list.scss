@@ -1,0 +1,21 @@
+.o-list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.o-list--horizontal {
+
+	> li {
+		display: inline-block;
+		width: auto;
+
+		margin-left: 1rem;
+		padding: 0;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}

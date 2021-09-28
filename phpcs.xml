@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<ruleset name="EDGE WP">
+
+	<description>WordPress Coding Standards.</description>
+
+	<config name="testVersion" value="7.2-" />
+
+	<!-- Exclude source code we do not control. -->
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+
+	<!-- Set default config. Can be overwritten. -->
+	<config name="colors" value="1" />
+	<config name="show_progress" value="1" />
+
+	<!-- Only test PHP files. -->
+	<arg name="extensions" value="php" />
+
+	<!-- Include the WordPress Theme Review ruleset, with exclusions. -->
+	<rule ref="WPThemeReview">
+	</rule>
+
+	<!-- Include sniffs for PHP cross-version compatibility. -->
+	<rule ref="PHPCompatibilityWP">
+  	<config name="testVersion" value="7.2-" />
+    <exclude name="PHPCompatibility.Syntax.NewShortArray" />
+	</rule>
+
+</ruleset>

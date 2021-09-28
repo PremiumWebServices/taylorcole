@@ -1,0 +1,120 @@
+// Pagination (Search Results Pages)
+
+.pagination {
+	float: right;
+	display: inline-block;
+
+	margin: 0;
+	padding: 0;
+}
+
+.pagination__page {
+	display: inline-block;
+	list-style-type: none;
+
+	> span,
+	> a {
+
+
+		display: inline-block;
+		width: auto;
+
+		padding: 9px 16px;
+		border: 1px solid $--color-grey;
+
+		background-color: $--color-white;
+		color: $--color-blue;
+		text-align: center;
+		text-transform: uppercase;
+
+		&:hover {
+			color: $--color-white;
+			text-decoration: none;
+			background-color: $--color-blue;
+		}
+	}
+
+	> span {
+		color: $--color-white;
+		background-color: $--color-blue;
+	}
+}
+
+/* Pagination
+   ========================================================================== */
+.c-pagination {
+	float: none; /* Overwrite of inherited styles. */
+	margin-top: $--space-l;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.c-pagination .page-numbers {
+	display: inline-block;
+	padding: $--space-s $--space-m;
+	background-color: $--color-white;
+	border: $--border-width-thin solid #7b8494;
+	font-size: 0.875rem;
+	line-height: 1.9285;
+}
+
+.c-pagination .page-numbers:not( :first-child ) {
+	border-left: none;
+}
+
+.c-pagination .page-numbers a,
+.c-pagination .page-numbers a {
+	color: $--color-primary;
+}
+
+.c-pagination .page-numbers:hover,
+.c-pagination .page-numbers:focus,
+.c-pagination .page-numbers:hover a,
+.c-pagination .page-numbers:focus a {
+	color: $--color-white;
+}
+
+.c-pagination .page-numbers:hover,
+.c-pagination .page-numbers:focus {
+	background-image: none;
+	background-color: $--color-primary;
+	color: $--color-white;
+}
+
+.c-pagination .current {
+	background-color: $--color-primary;
+	color: $--color-white;
+}
+
+.c-pagination .next {
+	position: relative; /* Overwrite of inherited styles. */
+	right: auto; /* Overwrite of inherited styles. */
+	top: auto; /* Overwrite of inherited styles. */
+}
+
+.c-pagination .prev {
+	position: relative; /* Overwrite of inherited styles. */
+	top: auto; /* Overwrite of inherited styles. */
+	left: auto; /* Overwrite of inherited styles. */
+}
+
+.c-pagination-search {
+	justify-content: flex-start;
+}
+
+.t-signature .c-pagination .page-numbers a,
+.t-signature .c-pagination .page-numbers a {
+	color: $--color-black;
+}
+
+.t-signature .c-pagination .page-numbers:hover,
+.t-signature .c-pagination .page-numbers:focus {
+	background-color: $--color-gold;
+	color: $--color-black;
+}
+
+.t-signature .c-pagination .current {
+	background-color: $--color-gold;
+	color: $--color-black;
+}

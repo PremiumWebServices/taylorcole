@@ -1,0 +1,126 @@
+/* Custom Typefaces
+	 ========================================================================== */
+
+	 /* source-sans-pro-regular - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./dist/fonts/source-sans-pro/v13-latin/source-sans-pro-v13-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+       url('./dist/fonts/source-sans-pro/v13-latin/source-sans-pro-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./dist/fonts/source-sans-pro/v13-latin/source-sans-pro-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./dist/fonts/source-sans-pro/v13-latin/source-sans-pro-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./dist/fonts/source-sans-pro/v13-latin/source-sans-pro-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./dist/fonts/source-sans-pro/v13-latin/source-sans-pro-v13-latin-regular.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
+/* source-sans-pro-600 - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./dist/fonts/source-sans-pro/v13-latin/source-sans-pro-v13-latin-600.eot'); /* IE9 Compat Modes */
+  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'),
+       url('./dist/fonts/source-sans-pro/v13-latin/source-sans-pro-v13-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./dist/fonts/source-sans-pro/v13-latin/source-sans-pro-v13-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./dist/fonts/source-sans-pro/v13-latin/source-sans-pro-v13-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('./dist/fonts/source-sans-pro/v13-latin/source-sans-pro-v13-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./dist/fonts/source-sans-pro/v13-latin/source-sans-pro-v13-latin-600.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
+/* source-sans-pro-700 - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./dist/fonts/source-sans-pro/v13-latin/source-sans-pro-v13-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'),
+       url('./dist/fonts/source-sans-pro/v13-latin/source-sans-pro-v13-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./dist/fonts/source-sans-pro/v13-latin/source-sans-pro-v13-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./dist/fonts/source-sans-pro/v13-latin/source-sans-pro-v13-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('./dist/fonts/source-sans-pro/v13-latin/source-sans-pro-v13-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./dist/fonts/source-sans-pro/v13-latin/source-sans-pro-v13-latin-700.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
+
+/* comfortaa-regular - latin */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./dist/fonts/comfortaa/v27-latin/comfortaa-v27-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./dist/fonts/comfortaa/v27-latin/comfortaa-v27-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./dist/fonts/comfortaa/v27-latin/comfortaa-v27-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./dist/fonts/comfortaa/v27-latin/comfortaa-v27-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./dist/fonts/comfortaa/v27-latin/comfortaa-v27-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./dist/fonts/comfortaa/v27-latin/comfortaa-v27-latin-regular.svg#Comfortaa') format('svg'); /* Legacy iOS */
+}
+
+/* Font Stacks
+	 ========================================================================== */
+
+$--font-family-primary:
+	'Comfortaa',
+	-apple-system,
+	blinkmacsystemfont,
+	'Segoe UI',
+	roboto,
+	helvetica,
+	arial,
+	sans-serif;
+
+$--font-family-body:
+	'Source Sans Pro',
+	-apple-system,
+	blinkmacsystemfont,
+	'Segoe UI',
+	roboto,
+	helvetica,
+	arial,
+	sans-serif;
+
+$--font-family-secondary:
+	'Comfortaa',
+	-apple-system,
+	blinkmacsystemfont,
+	'Segoe UI',
+	roboto,
+	helvetica,
+	arial,
+	sans-serif;
+
+$--font-family-code:
+	'SF Mono',
+	'Monaco',
+	'Inconsolata',
+	'Fira Mono',
+	'Droid Sans Mono',
+	'Source Code Pro',
+	monospace;
+
+$--font-family-pre: 'Courier 10 Pitch', courier, monospace;
+
+/* Font Weights
+ *
+ * Require less font weights to be loaded.
+ * Adjust weights we don't use to display the closest weight we do.
+ *
+ * 1. 100 - Thin (Hairline).
+ * 2. 200 - Extra Light (Ultra Light).
+ * 3. 300 - Light.
+ * 4. 400 - Normal.
+ * 5. 500 - Medium.
+ * 6. 600 - Semi Bold (Demi Bold).
+ * 7. 700 - Bold.
+ * 8. 800 - Extra Bold (Ultra Bold).
+ * 9. 900 - Black (Heavy).
+	 ========================================================================== */
+
+$--font-weight-thin:           300; /* [1] */
+$--font-weight-light-extra:    300; /* [2] */
+$--font-weight-light:          300; /* [3] */
+$--font-weight-normal:         400; /* [4] */
+$--font-weight-medium:         400; /* [5] */
+$--font-weight-bold-semi:      700; /* [6] */
+$--font-weight-bold:           700; /* [7] */
+$--font-weight-bold-extra:     700; /* [8] */
+$--font-weight-black:          700; /* [9] */

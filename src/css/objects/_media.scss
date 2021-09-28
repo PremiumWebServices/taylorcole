@@ -1,0 +1,15 @@
+/**
+ * Object: Media
+ */
+.o-media {
+	display: flex;
+	align-items: flex-start;
+}
+
+.o-media__figure {
+	margin-right: 18px;
+}
+
+.o-media__content {
+	flex: 1;
+}

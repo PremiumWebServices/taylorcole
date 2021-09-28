@@ -1,0 +1,72 @@
+/* Style the tab */
+.tab {
+  overflow: hidden;
+
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+
+
+/* Create an active/current tablink class */
+.tab button.active {
+  //background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+
+.tab-Selling {
+	background: $--color-grey-highlight;
+	color: $--color-white;
+}
+.tab-Buying{
+	background: $--color-pink;
+	color: $--color-white;
+}
+
+.tab-Lettings{
+	background: $--color-blue;
+	color: $--color-white;
+}
+
+.tab-Selling:hover {
+	background: rgba($--color-grey-highlight, 0.8);
+}
+.tab-Buying:hover{
+	background: rgba($--color-pink, 0.8);
+}
+
+.tab-Lettings:hover{
+	background: rgba($--color-blue, 0.8);
+}
+
+#Selling{
+	background: $--color-grey-highlight;
+	color: $--color-white;
+}
+
+#Buying{
+	background: $--color-pink;
+	color: $--color-white;
+}
+
+#Lettings{
+	background: $--color-blue;
+	color: $--color-white;
+}

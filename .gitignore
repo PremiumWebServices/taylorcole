@@ -1,0 +1,44 @@
+# Ignore Mac hidden files
+.AppleDouble
+.DS_Store
+
+# Ignore general files, backups and database
+*.bak
+*.sql
+.tweetcache
+error_log
+
+# Ignore generated & task runner files
+.sass-cache
+node_modules
+
+# Ignore compiled files
+/style.css
+/style.min.css
+/editor.css
+/editor.min.css
+/maps
+dist/
+/languages/
+!/languages/index.php
+public/
+
+
+## Server
+
+.env
+access.log
+error.log
+error_log
+
+## Development
+
+bin
+
+## PHP
+
+vendor/*
+composer.lock
+
+# Node
+package-lock.json

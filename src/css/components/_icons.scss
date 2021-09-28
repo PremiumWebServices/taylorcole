@@ -1,0 +1,83 @@
+.c-icon {
+	display: block;
+	width: auto;
+	height: 24px;
+}
+
+/* IE 11 Fix */
+@media ( -ms-high-contrast: none ) {
+	.c-icon {
+		width: 24px;
+	}
+}
+
+.c-icon--inline {
+	display: inline;
+	vertical-align: bottom;
+}
+
+.c-icon--x-small {
+	height: 14px;
+}
+
+/* IE 11 Fix */
+@media ( -ms-high-contrast: none ) {
+	.c-icon--x-small {
+		width: 14px;
+	}
+}
+
+.c-icon--small {
+	height: 18px;
+}
+
+/* IE 11 Fix */
+@media ( -ms-high-contrast: none ) {
+	.c-icon--small {
+		width: 18px;
+	}
+}
+
+.c-icon--medium {
+	height: 32px;
+}
+
+/* IE 11 Fix */
+@media ( -ms-high-contrast: none ) {
+	.c-icon--medium {
+		width: 32px;
+	}
+}
+
+.c-icon--large {
+	height: 72px;
+}
+
+/* IE 11 Fix */
+@media ( -ms-high-contrast: none ) {
+	.c-icon--large {
+		width: 72px;
+	}
+}
+
+.c-icon--feature {
+	height: 50px;
+}
+
+.c-icon--quote {
+	width: 36px;
+	height: 26px;
+	color: $--color-pink;
+}
+
+.c-icon--medium.c-icon--for-sale,
+.c-icon--medium.c-icon--to-let {
+	width: 68px;
+	height: 78px;
+	color: $--color-pink;
+}
+
+.t-signature .c-icon--for-sale,
+.t-signature .c-icon--to-let {
+	color: $--color-gold;
+}

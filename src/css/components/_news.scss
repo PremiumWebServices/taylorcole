@@ -1,0 +1,241 @@
+/**
+ * Card: News
+ */
+
+.c-card--news {
+	display: flex;
+	flex-direction: column;
+}
+
+@media ( max-width: 1023px ) {
+	.c-card--news {
+		padding-top: $--space-l;
+		padding-bottom: $--space-l;
+	}
+}
+
+.c-card--news .c-card__header {
+	margin-top: $--space-l;
+}
+
+.c-card--news .c-title--tertiary {
+	font-family: $--font-family-body;
+	font-size: 1.25rem;
+	font-weight: $--font-weight-normal;
+	color: #143055;
+	letter-spacing: 0.2px;
+	line-height: 1.25;
+	text-transform: initial;
+}
+
+.c-card--news .c-card__body {
+	flex: 1 0 auto;
+	margin-top: $--space-m;
+	font-family: $--font-family-body;
+	font-size: 0.875rem;
+	color: #7b8494;
+	letter-spacing: 0.14px;
+	line-height: 1.2857;
+}
+
+.c-card--news .c-card__footer {
+	margin-top: $--space-m;
+}
+
+/**
+ * News: Archive
+ */
+
+@media ( min-width: 1024px ) {
+	.c-news-grid {
+		display: grid;
+		grid-gap: $--space-m;
+		grid-row-gap: $--space-xxl;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin-right: auto;
+		margin-left: auto;
+		padding: $--space-l;
+		max-width: 1024px;
+		background-color: $--color-white;
+		border-radius: $--space-s;
+	}
+}
+
+/**
+ * News Single
+ */
+
+.single-post .c-header::after {
+	content: "";
+  display: table;
+  clear: both;
+}
+
+.single-post .hero {
+	width: 100%;
+	background: $--color-light-grey;
+}
+
+.c-header--hightlight {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: $--space-m;
+	padding-bottom: $--space-m;
+	width: 90%;
+	max-width: 1062px;
+}
+
+@media ( min-width: 900px ) {
+.c-header--hightlight {
+		padding-top: $--space-l;
+		padding-bottom: $--space-l;
+	}
+}
+
+@media ( min-width: 900px ) {
+.c-header--hightlight .c-aside {
+		float: left;
+		margin-right: $--space-l;
+	}
+}
+
+.c-header--hightlight .c-title {
+	font-family: $--font-family-secondary;
+	padding-top: $--space-m;
+	color: $--color-blue;
+	text-transform: uppercase;
+	font-size: 1.75rem;
+	letter-spacing: 0;
+	line-height: 1.3571;
+	font-weight: $--font-weight-normal;
+}
+
+.c-section--news {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: $--space-l;
+	padding-bottom: $--space-l;
+	width: 90%;
+	max-width: 1062px;
+
+	.c-content > ul {
+		margin-left: 15px;
+	}
+}
+
+@media ( min-width: 900px ) {
+	.c-section--news {
+		padding-top: $--space-xl;
+		padding-bottom: $--space-xl;
+	}
+}
+
+.single-post .hero .c-header {
+	margin-bottom: $--space-l;
+}
+
+@media ( min-width: 900px ) {
+	.single-post .hero .c-header {
+		margin-bottom: $--space-l;
+	}
+}
+
+.single-post .hero .c-header p:first-of-type {
+	font-size: 1.125rem;
+	font-weight: $--font-weight-bold-semi;
+	line-height: 1.3333;
+	color: $--color-blue;
+	letter-spacing: 0;
+}
+
+.single-post .hero .c-aside {
+	margin-top: $--space-m;
+	margin-bottom: $--space-m;
+}
+
+@media ( min-width: 900px ) {
+	.s-post .c-content {
+		column-count: 2;
+		column-gap: $--space-l;
+	}
+}
+
+.c-section--news-archive .c-section__container {
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+.c-section--news-footer {
+	padding: 10px 0;
+	margin-top: $--space-l;
+	border-top: $--border-width-thin solid $--color-grey;
+	border-bottom: $--border-width-thin solid $--color-grey;
+	color: $--color-grey;
+	display: flex;
+	justify-content: flex-end;
+}
+
+/**
+ * Block: News Archive
+ */
+.c-archive_posts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: $--space-l;
+	padding-bottom: $--space-l;
+	width: 90%;
+	max-width: 1062px;
+}
+
+.c-archive_posts > .c-card_blog {
+	display: block;
+	width: 100%;
+}
+
+@media ( min-width: 900px ) {
+	.c-archive_posts > .c-card_blog {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		width: 33%;
+	}
+}
+
+.c-section--news-list .c-card__image {
+	min-width: 100%;
+}
+
+.c-topics {
+	margin-top: $--space-l;
+	font-family: $--font-family-body;
+	font-size: 0.875rem;
+	font-weight: $--font-weight-normal;
+	color: #7b8494;
+	line-height: 1.2857;
+	text-transform: initial;
+}
+
+.c-topics__lists {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+.c-topics__lists li:not( :last-child )::after {
+	content: ',';
+	margin-right: 0.2rem;
+}
+
+
+.c-topics h3 {
+	font-family: $--font-family-body;
+	font-size: 0.875rem;
+	font-weight: $--font-weight-normal;
+	color: #7b8494;
+	line-height: 1.2857;
+}

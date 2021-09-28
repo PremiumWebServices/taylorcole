@@ -1,0 +1,28 @@
+.c-social {
+
+}
+
+.c-social--list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style: none;
+}
+
+.c-social__item {
+	margin-right: $--space-xs;
+	margin-left: $--space-xs;
+}
+
+.c-social__item:first-child {
+	margin-left: 0;
+}
+
+.c-social__item:last-child {
+	margin-right: 0;
+}
+
+.c-social__item .c-icon {
+	padding-right: $--space-s;
+	padding-left: $--space-s;
+}

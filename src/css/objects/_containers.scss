@@ -1,0 +1,11 @@
+.o-container {
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+	min-width: 300px;
+	max-width: 1024px;
+}
+
+.o-container--narrow {
+	max-width: 600px;
+}

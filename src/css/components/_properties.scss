@@ -1,0 +1,189 @@
+
+/* Properties Grid
+   ========================================================================== */
+.c-properties-grid {
+
+}
+
+@media ( min-width: 1024px ) {
+	.c-properties-grid {
+		display: grid;
+		grid-gap: $--space-m;
+		grid-row-gap: $--space-xxl;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin-right: auto;
+		margin-left: auto;
+		padding: $--space-l;
+		max-width: 1024px;
+		background-color: $--color-white;
+		border-radius: $--space-s;
+	}
+}
+
+
+@media ( max-width: 1023px ) {
+	.c-properties-grid .c-card--property {
+		padding-top: $--space-l;
+		padding-bottom: $--space-l;
+	}
+}
+
+/* Property: Single Header
+   ========================================================================== */
+
+.c-property__header {
+	margin-top: $--space-m;
+}
+
+@media ( min-width: 900px ) {
+
+	.c-property__header {
+		margin-top: $--space-l;
+	}
+
+}
+
+@media ( min-width: 900px ) {
+
+	.c-property__header .c-property__container {
+		display: grid;
+		grid-template-columns: 0.75fr 0.25fr;
+		grid-gap: $--space-l;
+	}
+
+	.c-property__header .c-property__features {
+		grid-column: 1 / span 2;
+		grid-row: 2;
+	}
+
+}
+
+@media ( min-width: 1200px ) {
+
+	.c-property__header .c-property__container {
+		display: grid;
+		grid-template-columns: 0.333fr 0.16fr 0.5fr;
+		grid-gap: $--space-l;
+	}
+
+	.c-property__header .c-property__features {
+		grid-column: 3;
+		grid-row: 1;
+	}
+
+}
+
+/* Property: Details
+   ========================================================================== */
+.c-card__details  {
+
+}
+
+.c-icon--to-let {
+    background: url(./dist/gui/to-let.png);
+    height: 80px;
+    width: 60px;
+}
+
+.c-icon--for-sale {
+    background: url(./dist/gui/for-sale.png);
+    height: 80px;
+    width: 60px;
+}
+
+.t-signature .c-icon--to-let {
+    background: url(./dist/gui/to-let-gold.png);
+    height: 80px;
+    width: 60px;
+}
+
+.t-signature .c-icon--for-sale {
+    background: url(./dist/gui/for-sale-gold.png);
+    height: 80px;
+    width: 60px;
+}
+
+.c-icon--sold {
+    background: url(./dist/gui/sold.png);
+    height: 80px;
+    width: 60px;
+}
+
+.c-icon--let {
+    background: url(./dist/gui/let.png);
+    height: 80px;
+    width: 60px;
+}
+
+/* Property: Features List
+ *
+ * 1. Keep list aligned with text edge.
+   ========================================================================== */
+
+.c-property__features {
+	padding: $--space-m;
+	background-color: hsla(218, 10%, 53%, 0.15);
+}
+
+.c-property__features h2 {
+	margin-bottom: $--space-m;
+	font-size: 1.25rem;
+	font-weight: $--font-weight-normal;
+	color: #143055;
+	letter-spacing: 0.2px;
+	text-transform: initial;
+}
+
+.c-property__features ul {
+	padding-left: $--space-m; /* [1] */
+	column-count: 2;
+	column-gap: $--space-l;
+}
+
+/* Property: Options List
+ *
+ * 1. Keep list aligned with text edge.
+   ========================================================================== */
+.c-property__options {
+
+}
+
+.c-property__options h2 {
+	margin-bottom: $--space-m;
+	font-size: 1.25rem;
+	font-weight: $--font-weight-normal;
+	color: #143055;
+	letter-spacing: 0.2px;
+	text-transform: initial;
+}
+
+.c-property__options ul {
+	padding-left: $--space-m; /* [1] */
+}
+
+/* Property: Content
+   ========================================================================== */
+.c-property__content {
+	margin-top: $--space-l;
+}
+
+@media ( min-width: 900px ) {
+	.c-property__content {
+		margin-top: $--space-xl;
+	}
+}
+
+.c-property__content h2 {
+	margin-bottom: $--space-m;
+	font-size: 1.25rem;
+	font-weight: $--font-weight-normal;
+	color: #143055;
+	letter-spacing: 0.2px;
+}
+
+@media ( min-width: 1200px ) {
+	.c-property__description {
+		column-count: 2;
+		column-gap: $--space-l;
+	}
+}

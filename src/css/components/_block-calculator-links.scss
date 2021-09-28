@@ -1,0 +1,47 @@
+/**
+ * Block: Links with icons.
+ *
+ * Add a links with icon block.
+ */
+
+.c-section--calculator-links {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: $--color-white;
+}
+
+.c-section--calculator-links a {
+	color: $--color-white;
+}
+
+.c-section--calculator-links a:hover,
+.c-section--calculator-links a:focus {
+	color: $--color-blue;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.c-section--calculator-links .c-section__container {
+	display: grid;
+	grid-gap: 32px;
+	grid-template-columns: 1fr 1fr;
+}
+
+@media ( min-width: 900px ) {
+	.c-section--calculator-links .c-section__container {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
+.c-section--calculator-links .c-section__item {
+	text-align: center;
+}
+
+.c-section--calculator-links .c-section__item svg {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.c-section__item__blue a {
+	color: $--color-blue;
+}

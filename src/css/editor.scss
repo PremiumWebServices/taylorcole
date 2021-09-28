@@ -1,0 +1,22 @@
+@import 'settings/**/*';
+
+@import 'generic/**/*';
+
+@import 'elements/**/*';
+
+@import 'objects/**/*';
+
+@import 'components/**/*';
+
+@import 'utilities/**/*';
+
+@import 'shame';
+/*!
+ * Editor specific styles.
+ */
+
+.wp-block {
+	width: 100% !important;
+	min-width: 300px !important;
+	max-width: 100% !important;
+}

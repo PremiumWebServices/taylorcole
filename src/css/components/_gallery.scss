@@ -1,0 +1,47 @@
+
+.c-property__gallery.c-hero {
+	max-height: 683px;
+	min-height: 300px;
+}
+
+.c-gallery__primary {
+	position: relative;
+	max-width: 1024px;
+	max-height: 683px;
+	min-height: 300px;
+}
+
+.c-gallery__primary.c-hero__base {
+	background-image: unset;
+}
+
+@media ( min-width: 600px ) {
+	.c-property__gallery.c-hero,
+	.c-gallery__primary {
+		min-height: 450px;
+	}
+}
+
+@media ( min-width: 900px ) {
+	.c-property__gallery.c-hero,
+	.c-gallery__primary {
+		min-height: 683px;
+	}
+}
+
+.c-gallery__primary img {
+	min-width: 100%;
+}
+
+.c-gallery__secondary {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+}
+
+.c-gallery__secondary .slick-slide {
+	padding-top: $--space-s;
+	padding-right: $--space-xs;
+	padding-bottom: $--space-s;
+	padding-left: $--space-xs;
+}

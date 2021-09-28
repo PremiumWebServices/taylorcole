@@ -1,0 +1,23 @@
+.wp-block-separator {
+	margin-right: $--space-l;
+	margin-left: $--space-l;
+	border: none;
+	border-top-width: $--border-width-thin;
+	border-top-style: solid;
+	border-top-color: #7b8494;
+}
+
+@media ( min-width: 1024px ) {
+	.wp-block-separator {
+		margin-right: $--space-xl;
+		margin-left: $--space-xl;
+	}
+}
+
+@media ( min-width: 1024px ) {
+	.wp-block-separator {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 1024px;
+	}
+}

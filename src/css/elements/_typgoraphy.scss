@@ -1,0 +1,106 @@
+html,
+body {
+	color: $--color-text;
+	font-family: $--font-family-body;
+	//font-size: $font-size-base;
+	//line-height: $line-height-text;
+	text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	line-height: 25px;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+p:not( :first-of-type ) {
+	margin-top: $--space-s;
+}
+
+/**
+ * Clear margin for line breaks.
+ */
+br {
+	margin-bottom: 0;
+}
+
+/*small {
+	font-size: $font-size-small;
+}
+
+sub,
+sup {
+
+}
+
+sup {
+
+}
+
+sub {
+
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	max-width: 100%;
+	margin-bottom: $space-l;
+	padding: $inset-l;
+//	background: $color-background-pre;
+	font-family: $font-family-pre;
+	font-size: $font-size-medium;
+	line-height: $line-height-pre;
+	overflow: auto;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: $font-family-code;
+	font-size: $font-size-medium;
+}*/
+
+/**
+ * Abbreviations and Acronyms.
+ *
+ * 1. Enable small caps if available
+ * 2. Fix letter spacing.
+ * 3. Address styling not present in some browsers.
+ */
+abbr,
+acronym {
+	//border-bottom: 1px dotted $color-border-abbr; // [3]
+	letter-spacing: 0.1em; // [2]
+	cursor: help;
+}
+
+mark,
+ins {
+	//background: $color-background-ins;
+	text-decoration: none;
+}
+
+/*big {
+	font-size: $font-size-x-large;
+}
+*/
